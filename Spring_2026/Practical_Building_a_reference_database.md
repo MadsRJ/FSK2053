@@ -210,7 +210,7 @@ awk -F '\t' '{ if ($11 ~ /[RYSWKMBDHVN]/) print NR, $0 }' References_unfiltered.
 <mark>**Question 8**</mark>: How would you deal with ambiguous basepairs when curating your reference database? Should those records be deleted, or can they still be informative?
 
 ### Unique sequences per species - what does it tell us?
-We already looked at the amount of sequences for each species in your respective files. However, it could also be informative to look at the number of unique sequences for each species. It is completely normal and natural to observe multiple unique sequences within a species for a given genetic barcode region. However, in some cases, this variation may indicate that one or more individuals of the species were misidentified. For example, if most specimens of a species share a dominant sequence, but a less abundant sequence is also present—and that sequence matches one found in another species in your reference database—this could be a strong clue of a misidentified specimen. This is particularly likely if the sequences are highly divergent. Let's have a look at the unique sequences per species in your file.
+We already looked at the amount of sequences for each species in your respective files. However, it could also be informative to look at the number of unique sequences for each species. It is completely normal and natural to observe multiple unique sequences within a species for a given genetic barcode region. However, in some cases, this variation may indicate that one or more individuals of the species were misidentified. For example, if most specimens of a species share a dominant sequence, but a less abundant sequence is also present—and that sequence matches one found in another species in your reference database—this could be a strong indication of a misidentified specimen. This is particularly likely if the sequences are highly divergent. Let's have a look at the unique sequences per species in your file.
 
 **NOTE**: The actual sequence is found in column 11. Here we rely on the species name and the sequence, sort them numerically (alphabetically) by species, and count the unique sequence entries per unique species.
 ```
@@ -272,7 +272,7 @@ The post-curation check is all about thinking critically about the reference dat
 
 <mark>**Question 18**</mark>: Is your database designed to detect invasive species? What would you do differently if you wanted to have early detection mechanisms for detecting invasive species?
 
-<mark>**Question 19**</mark>: If you get an equally good hit to a species only known from Greenland to a species known to occur in Norway, is it fair to assume that the sequence originated the Norwegian species, if your sample is from Norway?
+<mark>**Question 19**</mark>: If you get an equally good hit to a species only known from Greenland to a species known to occur in Norway, is it fair to assume that the sequence originated from the Norwegian species, if your sample is from Norway?
 
 <mark>**Question 20**</mark>: In the case of the three wolffish species (*Anarhichas lupus*, *Anarhichas minor* and *Anarhichas denticulatus*), *A. lupus* is known to be more coastal, whereas the other two are usually found further off shore. Is it fair to decide which of the species we found using the barcode, assuming our sample was from the coastal zone? 
 
