@@ -49,6 +49,15 @@ BiocManager::install("msa")
 BiocManager::install("ggmsa")
 ```
 ```
+# If needed, install packages first time before loading libraries
+# install.packages("bios2mds")
+# install.packages("phangorn")
+# install.packages("ape")
+# install.packages("stats")
+# install.packages("ggplot2")
+# install.packages("Biostrings")
+```
+```
 # Load packages
 library(msa)
 library(bios2mds)
